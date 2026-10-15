@@ -283,6 +283,22 @@
       font-size: 0.7rem; font-weight: 500;
       color: var(--muted); margin-left: 4px;
     }
+
+    /* ── BIG FEATURED BANNER ── */
+    .big-link {
+      display: block; max-width: 1100px; margin: 0 auto 40px;
+      padding: 36px 32px; border-radius: 16px;
+      border: 1px solid #05a86b88;
+      background: linear-gradient(135deg, rgba(5,168,107,0.22), rgba(59,130,246,0.18));
+      text-decoration: none; color: var(--text);
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .big-link:hover { transform: translateY(-2px); border-color: var(--green); }
+    .big-link .eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--green); }
+    .big-link h2 { font-size: clamp(1.6rem, 4.5vw, 2.4rem); font-weight: 800; margin: 6px 0 8px; letter-spacing: -0.5px; }
+    .big-link p { color: var(--muted); max-width: 640px; }
+    .big-link .go { display: inline-block; margin-top: 18px; padding: 12px 22px; border-radius: 10px; background: var(--green); color: #fff; font-weight: 700; font-size: 1rem; }
+    .big-wrap { padding: 0 24px; }
   </style>
 </head>
 <body>
@@ -304,9 +320,20 @@
 
 <!-- ═══ STATS ═══ -->
 <div class="stats-bar">
-  <div class="stat"><div class="num">7</div><div class="label">Live Sites</div></div>
+  <div class="stat"><div class="num">8</div><div class="label">Live Sites</div></div>
   <div class="stat"><div class="num">3</div><div class="label">DSA References</div></div>
   <div class="stat"><div class="num">1</div><div class="label">Backend Cheatsheet</div></div>
+</div>
+
+
+<!-- ═══ BIG FEATURED: SQL NOTES ═══ -->
+<div class="big-wrap">
+  <a class="big-link" href="https://bjonnalagadda-dsa.github.io/sql-study-hub/" target="_blank" rel="noopener">
+    <div class="eyebrow">Start here · New</div>
+    <h2>🗃️ SQL Study Notes</h2>
+    <p>The full SQL Ultimate Course in notes: 27 chapters, setup guide, database model, cheat sheet and flashcards. Joins, window functions, CTEs, indexes and more.</p>
+    <span class="go">Open SQL Study Notes →</span>
+  </a>
 </div>
 
 <!-- ═══ CHEATSHEETS ═══ -->
